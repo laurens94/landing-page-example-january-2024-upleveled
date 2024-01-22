@@ -1,0 +1,25 @@
+.button {
+  background-image: var(--gradient);
+  border-radius: 2rem;
+  display: block;
+  padding: 2px;
+  font-weight: 600;
+
+  div {
+    background-color: var(--color-background);
+    border-radius: 2rem;
+    padding: .7rem 1.5rem;
+  }
+}
+
+.large {
+  // composes: button;
+
+  div {
+    padding: .7rem 2.5rem;
+  }
+}
+
+.alternative {
+  background-image: var(--gradient-2);
+}

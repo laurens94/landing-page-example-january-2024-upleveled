@@ -1,0 +1,146 @@
+.app {
+  font-family: 'Raleway Variable', sans-serif;
+  background: var(--color-background);
+  color: var(--color-text);
+
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing);
+  }
+}
+
+.divider {
+  background-color: var(--color-section-divider);
+  height: 1px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header {
+  background: var(--color-background);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--spacing);
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      .link {
+        padding: .4rem;
+      }
+    }
+  }
+}
+
+.logo {
+  img {
+    height: 2rem;
+  }
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.33333;
+}
+
+section {
+  padding: 5rem 0;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  align-items: center;
+
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1.16667;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  > p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    gap: var(--spacing);
+
+    .button {
+      --_padding: .7rem 2rem;
+    }
+  }
+}
+
+.sectionGradient {
+  background-image: radial-gradient(color-mix(in srgb, var(--color-purple), transparent 65%), transparent 50%);
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gradient {
+  background-image: var(--gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.card {
+  position: relative;
+  
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    background-color: var(--color-background-card);
+    border-radius: 4px 4px var(--border-radius-card) var(--border-radius-card);
+    border: 1px solid var(--color-border);
+    padding: 2rem;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  p {
+    text-align: left;
+    line-height: 2;
+  }
+
+  &::before {
+    content: '';
+    background-image: var(--gradient);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: var(--spacing);
+}

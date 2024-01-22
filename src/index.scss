@@ -1,0 +1,28 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: #141118;
+  --color-text: #fff;
+  --color-blue: rgb(114, 134, 255);
+  --color-blue-dark: #4c2cca;
+  --color-pink: rgb(254, 117, 135);
+  --color-purple: #bc1de5;
+  --color-border: rgba(255,255,255,.1);
+  --color-background-card: rgb(27, 23, 36);
+  --color-section-divider: rgba(245, 245, 245, 0.1);
+  --border-radius-card: 12px;
+  --gradient: linear-gradient(to right, var(--color-blue), var(--color-pink));
+  --gradient-2: linear-gradient(to right, var(--color-purple), var(--color-blue-dark));
+  --spacing: 2rem;
+}
+
+a, a:link {
+  color: inherit;
+  text-decoration: none;
+}
