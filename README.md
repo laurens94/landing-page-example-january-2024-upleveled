@@ -1,6 +1,8 @@
 # Cloned landing page January 2024
 
-During this lecture we cloned a few sections of the landingpage https://www.enterpret.com in React, utilizing CSS Modules.
+This repo is a reference for the lecture I gave for [UpLeveled](https://upleveled.io/).
+
+During this practical lecture we cloned a few sections of the landingpage https://www.enterpret.com in React, utilizing CSS Modules and tackling some common CSS layout problems.
 
 ## Run locally
 
